@@ -1,0 +1,134 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+currentTime = Time.new.strftime("%Y-%m-%d-%H-%M-%s")
+logDirectory = ENV['Scheme']+"#{currentTime}.ipa"
+
+
+default_platform(:ios)
+
+platform :ios do
+
+before_all do
+
+#将XXX换成自己的specific password 密码,其他不用改，去.env文件
+ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "XXX"
+cocoapods(use_bundle_exec: FALSE)
+puts "所有任务执行开始了"
+
+end
+
+
+desc "上线 App Store"
+lane :release do | options |
+ #需要指定版本号打开下面函数
+ #setup_version_build(options)
+ increment_build_number(xcodeproj: ENV['Xcodeproj'])
+
+
+build_app(
+workspace: ENV['Workspace'],
+scheme: ENV['Scheme'],
+output_directory: ENV['Appstore_Output_Path'],
+output_name: logDirectory)
+upload_to_app_store
+end
+
+desc "上线testflight"
+lane :beta do | options |
+
+# setup_version_build(options)
+increment_build_number(xcodeproj: ENV['Xcodeproj'])
+
+build_app(
+workspace: ENV['Workspace'],
+scheme: ENV['Scheme'],
+output_name: logDirectory)
+upload_to_testflight
+end
+
+desc "上线蒲公英"
+lane :adhoc_pgy do |options|
+
+ #setup_version_build(options)
+increment_build_number(xcodeproj: ENV['Xcodeproj'])
+
+
+build_app(
+workspace: ENV['Workspace'],
+scheme: ENV['Scheme'],
+silent: true,
+clean: true,
+output_directory: ENV['Pgy_Output_Path'],
+output_name: logDirectory,
+
+# xcodebuild ios 9
+export_xcargs: "-allowProvisioningUpdates",
+
+export_method:"ad-hoc")
+
+pgyer(api_key: ENV['Api_Key'],
+user_key: ENV['User_Key'])
+
+end
+
+
+
+desc "上线firim"
+lane :adhoc_firim do |options|
+
+# setup_version_build(options)
+increment_build_number(xcodeproj:ENV['Xcodeproj'])
+
+build_app(
+workspace: ENV['Workspace'],
+scheme: ENV['Workspace'],
+silent: true,
+clean: true,
+output_directory: ENV['Firim_Output_Path'],
+output_name: logDirectory,
+export_xcargs: "-allowProvisioningUpdates",
+export_method:"ad-hoc")
+
+firim(firim_api_token:ENV['Firim_api_token'])
+
+end
+
+# 函数
+desc "版本处理"
+def setup_version_build(options)
+increment_build_number(
+build_number:options[:build]
+)
+increment_version_number(
+version_number:options[:version]
+)
+
+end
+
+
+after_all do |lane, options|
+
+puts"结束了"
+end
+
+
+error do |lane, exception, options|
+if options[:debug]
+puts "Hi :)"
+end
+end
+
+end

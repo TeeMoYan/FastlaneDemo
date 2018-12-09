@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29E1EBF7070170A5730F4304 /* libPods-TeeMoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3217FB481717BD904BFED10 /* libPods-TeeMoTest.a */; };
+		6524F01B21B977570084C139 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6524F01A21B977570084C139 /* AppDelegate.m */; };
+		6524F01E21B977570084C139 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6524F01D21B977570084C139 /* ViewController.m */; };
+		6524F02121B977570084C139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6524F01F21B977570084C139 /* Main.storyboard */; };
+		6524F02321B977570084C139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6524F02221B977570084C139 /* Assets.xcassets */; };
+		6524F02621B977570084C139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6524F02421B977570084C139 /* LaunchScreen.storyboard */; };
+		6524F02921B977570084C139 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6524F02821B977570084C139 /* main.m */; };
+		6524F03321B977570084C139 /* TeeMoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6524F03221B977570084C139 /* TeeMoTestTests.m */; };
+		6524F03E21B977580084C139 /* TeeMoTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6524F03D21B977580084C139 /* TeeMoTestUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6524F02F21B977570084C139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6524F00E21B977570084C139 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6524F01521B977570084C139;
+			remoteInfo = TeeMoTest;
+		};
+		6524F03A21B977580084C139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6524F00E21B977570084C139 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6524F01521B977570084C139;
+			remoteInfo = TeeMoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42F940D429D0D5749D47E4EE /* Pods-TeeMoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeeMoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeeMoTest/Pods-TeeMoTest.release.xcconfig"; sourceTree = "<group>"; };
+		54C4DEE769F6E7FBD498CAA7 /* libPods-TeeMoTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeeMoTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6524F01621B977570084C139 /* TeeMoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeeMoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6524F01921B977570084C139 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6524F01A21B977570084C139 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6524F01C21B977570084C139 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6524F01D21B977570084C139 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6524F02021B977570084C139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6524F02221B977570084C139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6524F02521B977570084C139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6524F02721B977570084C139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6524F02821B977570084C139 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6524F02E21B977570084C139 /* TeeMoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeeMoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6524F03221B977570084C139 /* TeeMoTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeeMoTestTests.m; sourceTree = "<group>"; };
+		6524F03421B977570084C139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6524F03921B977570084C139 /* TeeMoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeeMoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6524F03D21B977580084C139 /* TeeMoTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeeMoTestUITests.m; sourceTree = "<group>"; };
+		6524F03F21B977580084C139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7539BFCAC5C7D74E29AC211F /* libPods-TeeMoTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeeMoTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3217FB481717BD904BFED10 /* libPods-TeeMoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeeMoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80AC2F41AFFC108E736D92E /* Pods-TeeMoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeeMoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeeMoTest/Pods-TeeMoTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6524F01321B977570084C139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E1EBF7070170A5730F4304 /* libPods-TeeMoTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6524F02B21B977570084C139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6524F03621B977570084C139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E07F7FDBC6D9C8C9A0E261E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B80AC2F41AFFC108E736D92E /* Pods-TeeMoTest.debug.xcconfig */,
+				42F940D429D0D5749D47E4EE /* Pods-TeeMoTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6524F00D21B977570084C139 = {
+			isa = PBXGroup;
+			children = (
+				6524F01821B977570084C139 /* TeeMoTest */,
+				6524F03121B977570084C139 /* TeeMoTestTests */,
+				6524F03C21B977580084C139 /* TeeMoTestUITests */,
+				6524F01721B977570084C139 /* Products */,
+				4E07F7FDBC6D9C8C9A0E261E /* Pods */,
+				A6D2F2145FA41249A5BBA102 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6524F01721B977570084C139 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6524F01621B977570084C139 /* TeeMoTest.app */,
+				6524F02E21B977570084C139 /* TeeMoTestTests.xctest */,
+				6524F03921B977570084C139 /* TeeMoTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6524F01821B977570084C139 /* TeeMoTest */ = {
+			isa = PBXGroup;
+			children = (
+				6524F01921B977570084C139 /* AppDelegate.h */,
+				6524F01A21B977570084C139 /* AppDelegate.m */,
+				6524F01C21B977570084C139 /* ViewController.h */,
+				6524F01D21B977570084C139 /* ViewController.m */,
+				6524F01F21B977570084C139 /* Main.storyboard */,
+				6524F02221B977570084C139 /* Assets.xcassets */,
+				6524F02421B977570084C139 /* LaunchScreen.storyboard */,
+				6524F02721B977570084C139 /* Info.plist */,
+				6524F02821B977570084C139 /* main.m */,
+			);
+			path = TeeMoTest;
+			sourceTree = "<group>";
+		};
+		6524F03121B977570084C139 /* TeeMoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				6524F03221B977570084C139 /* TeeMoTestTests.m */,
+				6524F03421B977570084C139 /* Info.plist */,
+			);
+			path = TeeMoTestTests;
+			sourceTree = "<group>";
+		};
+		6524F03C21B977580084C139 /* TeeMoTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6524F03D21B977580084C139 /* TeeMoTestUITests.m */,
+				6524F03F21B977580084C139 /* Info.plist */,
+			);
+			path = TeeMoTestUITests;
+			sourceTree = "<group>";
+		};
+		A6D2F2145FA41249A5BBA102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3217FB481717BD904BFED10 /* libPods-TeeMoTest.a */,
+				54C4DEE769F6E7FBD498CAA7 /* libPods-TeeMoTestTests.a */,
+				7539BFCAC5C7D74E29AC211F /* libPods-TeeMoTestUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6524F01521B977570084C139 /* TeeMoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6524F04221B977580084C139 /* Build configuration list for PBXNativeTarget "TeeMoTest" */;
+			buildPhases = (
+				150DCA18B2A311878892AD07 /* [CP] Check Pods Manifest.lock */,
+				6524F01221B977570084C139 /* Sources */,
+				6524F01321B977570084C139 /* Frameworks */,
+				6524F01421B977570084C139 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeeMoTest;
+			productName = TeeMoTest;
+			productReference = 6524F01621B977570084C139 /* TeeMoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6524F02D21B977570084C139 /* TeeMoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6524F04521B977580084C139 /* Build configuration list for PBXNativeTarget "TeeMoTestTests" */;
+			buildPhases = (
+				6524F02A21B977570084C139 /* Sources */,
+				6524F02B21B977570084C139 /* Frameworks */,
+				6524F02C21B977570084C139 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6524F03021B977570084C139 /* PBXTargetDependency */,
+			);
+			name = TeeMoTestTests;
+			productName = TeeMoTestTests;
+			productReference = 6524F02E21B977570084C139 /* TeeMoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6524F03821B977570084C139 /* TeeMoTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6524F04821B977580084C139 /* Build configuration list for PBXNativeTarget "TeeMoTestUITests" */;
+			buildPhases = (
+				6524F03521B977570084C139 /* Sources */,
+				6524F03621B977570084C139 /* Frameworks */,
+				6524F03721B977570084C139 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6524F03B21B977580084C139 /* PBXTargetDependency */,
+			);
+			name = TeeMoTestUITests;
+			productName = TeeMoTestUITests;
+			productReference = 6524F03921B977570084C139 /* TeeMoTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6524F00E21B977570084C139 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = TeeMo;
+				TargetAttributes = {
+					6524F01521B977570084C139 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					6524F02D21B977570084C139 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6524F01521B977570084C139;
+					};
+					6524F03821B977570084C139 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6524F01521B977570084C139;
+					};
+				};
+			};
+			buildConfigurationList = 6524F01121B977570084C139 /* Build configuration list for PBXProject "TeeMoTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6524F00D21B977570084C139;
+			productRefGroup = 6524F01721B977570084C139 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6524F01521B977570084C139 /* TeeMoTest */,
+				6524F02D21B977570084C139 /* TeeMoTestTests */,
+				6524F03821B977570084C139 /* TeeMoTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6524F01421B977570084C139 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6524F02621B977570084C139 /* LaunchScreen.storyboard in Resources */,
+				6524F02321B977570084C139 /* Assets.xcassets in Resources */,
+				6524F02121B977570084C139 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6524F02C21B977570084C139 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6524F03721B977570084C139 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		150DCA18B2A311878892AD07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeeMoTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6524F01221B977570084C139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6524F01E21B977570084C139 /* ViewController.m in Sources */,
+				6524F02921B977570084C139 /* main.m in Sources */,
+				6524F01B21B977570084C139 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6524F02A21B977570084C139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6524F03321B977570084C139 /* TeeMoTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6524F03521B977570084C139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6524F03E21B977580084C139 /* TeeMoTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6524F03021B977570084C139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6524F01521B977570084C139 /* TeeMoTest */;
+			targetProxy = 6524F02F21B977570084C139 /* PBXContainerItemProxy */;
+		};
+		6524F03B21B977580084C139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6524F01521B977570084C139 /* TeeMoTest */;
+			targetProxy = 6524F03A21B977580084C139 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6524F01F21B977570084C139 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6524F02021B977570084C139 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6524F02421B977570084C139 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6524F02521B977570084C139 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6524F04021B977580084C139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		6524F04121B977580084C139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		6524F04321B977580084C139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80AC2F41AFFC108E736D92E /* Pods-TeeMoTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 30;
+				DEVELOPMENT_TEAM = V52CQL5L43;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = TeeMoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		6524F04421B977580084C139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F940D429D0D5749D47E4EE /* Pods-TeeMoTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 30;
+				DEVELOPMENT_TEAM = V52CQL5L43;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = TeeMoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		6524F04621B977580084C139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeeMoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TeeMoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeeMoTest.app/TeeMoTest";
+			};
+			name = Debug;
+		};
+		6524F04721B977580084C139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeeMoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TeeMoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeeMoTest.app/TeeMoTest";
+			};
+			name = Release;
+		};
+		6524F04921B977580084C139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeeMoTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TeeMoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeeMoTest;
+			};
+			name = Debug;
+		};
+		6524F04A21B977580084C139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeeMoTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TeeMoTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeeMoTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6524F01121B977570084C139 /* Build configuration list for PBXProject "TeeMoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6524F04021B977580084C139 /* Debug */,
+				6524F04121B977580084C139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6524F04221B977580084C139 /* Build configuration list for PBXNativeTarget "TeeMoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6524F04321B977580084C139 /* Debug */,
+				6524F04421B977580084C139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6524F04521B977580084C139 /* Build configuration list for PBXNativeTarget "TeeMoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6524F04621B977580084C139 /* Debug */,
+				6524F04721B977580084C139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6524F04821B977580084C139 /* Build configuration list for PBXNativeTarget "TeeMoTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6524F04921B977580084C139 /* Debug */,
+				6524F04A21B977580084C139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6524F00E21B977570084C139 /* Project object */;
+}
